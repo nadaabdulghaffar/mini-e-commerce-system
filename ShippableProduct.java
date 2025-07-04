@@ -10,4 +10,8 @@ public class ShippableProduct extends Product{
         return Weight;
     }
     
+    double getShippingCost() {
+        double shippingRate = 2.7; //Assuming shipping rate per kg
+        return Weight * shippingRate;
+    }
 }
